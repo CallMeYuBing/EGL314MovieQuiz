@@ -265,7 +265,7 @@ The Option A to Option D **button.config** changes the text of the 4 choices tha
 
 Global variable **ans** is called and set to 1 as 1 is the correct answer for level 1 which represents button **OptionB**. **ans** checks if the correct option is clicked by the player by rewarding a point through a 4 check functions that are for the 4 available choices. The check() functions will be elaborated further in Frame 4.
 
-Button **one** is in row 0 and column 0 in the 3x4 grid inside frame 2. Button starts from button **one** and ends at button **tweleve**, starting from left to right than top to bottom.
+Button **one** is in row 0 and column 0 in the 3x4 grid inside frame 2. Button starts from button **one** and ends at button **twelve**, starting from left to right than top to bottom.
 
 ## **Frame 3: Main Menu (Start Button, Rules Button, Reset Button, Score Label and Timer Label)**
 
