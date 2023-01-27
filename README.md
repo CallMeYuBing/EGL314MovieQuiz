@@ -69,7 +69,7 @@ To finish it off, click **Open**.
 
 Enter your username and password. The default login for User is "pi" and the Password is "raspberry".
 
-![GUI](Images/VNCSetup.png) <br>
+![GUI](Images/PuttyCMD.png) <br>
 *Photo of PuTTy CMD*
 
 To change your password, use the following command
