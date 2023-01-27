@@ -1,7 +1,6 @@
 from tkinter import * 
 from tkinter import messagebox
 import paho.mqtt.client as mqtt
-from playsound import playsound
 from student_pub import pubpic 
 import pygame
 from pygame import *
@@ -22,8 +21,6 @@ header.grid(row=0, columnspan=3)
 
 frame2 = Frame(main)
 frame2.grid(rowspan=2, column=0)
-
-time = 300
 
 #Frozen
 def one_pressed():
@@ -244,19 +241,16 @@ def StartBtnTimer():
     Timer()
 
 def Correct():
-    #playsound('SFX/Correct.mp3')
     pygame.mixer.init()
     pygame.mixer.music.load('SFX/Correct.mp3')
     pygame.mixer.music.play()
 
 def Wrong():
-    #playsound('SFX/Wrong.mp3')
     pygame.mixer.init()
     pygame.mixer.music.load('SFX/Wrong.mp3')
     pygame.mixer.music.play()
 
 def Click():
-   #playsound('SFX/Click.mp3')
     pygame.mixer.init()
     pygame.mixer.music.load('SFX/Click.mp3')
     pygame.mixer.music.play()
