@@ -1,32 +1,43 @@
-# MovieQuiz
-### Summary
-The goal of the game is to guess the movie through the use of 2-4 emojis that will be displayed on the polarizer motherframe! Select the correct answer from 4 choices and get the highest score possible which is 22! Every correct answer gives the player 1 point to their score while every wrong answer deducts 1 point from their score.
+# Movie Guessing Quiz
+## Summary
+The goal of the game is to guess the movie through the usage of 2-4 emojis that will be displayed on the polarizer motherframe! 
+Select the correct answer from 4 choices and get the highest score possible which is 22! Every correct answer gives the player 1 point to their score while every wrong answer deducts 1 point from their score.
 
 The conditions to win the game is to get a minimum of 8 points before the 5 minute timer ends or get every question correct and obtain 12 points. Getting every question correct will award the player an additional 10 points.
 
-Otherwise, having less than 8 points when the 5 minute timer ends or getting 6 questions wrong will be a game over.
+Otherwise, having less than 8 points when the 5 minute timer ends or getting a -6 score will be a game over.
 
 ![Main GUI](/Images/GUI.png)
-Photo of Main GUI
+_Photo of Main GUI_
 
+<br>
+<br>
 
 ```mermaid
 graph TD;
 main.py-->rules
 rules-->main.py
+reset-->main.py
 main.py-->start
 start-->levels
 levels-->level1to12
 level1to12-->optionsAtoD
 optionsAtoD-->Correct+1Score
 optionsAtoD-->Wrong-1Score
+Correct+1Score-->Score
+Wrong-1Score-->Score
+Score-->ScoreAbove8
+Score-->ScoreBelow6OrTimeout
+ScoreAbove8-->Win
+ScoreBelow6OrTimeout-->Lose
+Win-->reset
+Lose-->reset
 ```
-Code Flowchart
-### Software Used
+_Code Flowchart_
+
+## Hardware Used
 Model of hardware: Raspberry Pi 4 Model B
 Version: Raspbian GNU Linux 10 Buster
-
-Version: 1.74 
 
 ## Features
 The game features:
@@ -35,22 +46,22 @@ The game features:
 - 5 minute timer
 - 4 choices to pick from for each question
 
-## How to use?
+## Installation
 
 To run this program, you need to install following libraries
 - MQTT Client
-- playsound 
+- pygame 
 
-Open up Command Prompt;
+Open up terminal
 
 Installation of MQTT Client
 ```
-pip3 install paho-mqtt
+sudo apt install paho-mqtt
 ```
 
 Installation of playsound
 ```
-pip3 install playsound==1.2.2
+sudo apt install pygame
 ```
 
 ## 
