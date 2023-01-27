@@ -498,5 +498,3 @@ def Wrong():
 
 These functions are located inside all 4 of the Check() functions.
 
-### _How to open the file?_
-
