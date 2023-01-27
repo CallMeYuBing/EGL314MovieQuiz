@@ -244,22 +244,22 @@ def StartBtnTimer():
     Timer()
 
 def Correct():
-    playsound('SFX/Correct.mp3')
-    # pygame.mixer.init()
-    # pygame.mixer.music.load('SFX/Correct.mp3')
-    # pygame.mixer.music.play()
+    #playsound('SFX/Correct.mp3')
+    pygame.mixer.init()
+    pygame.mixer.music.load('SFX/Correct.mp3')
+    pygame.mixer.music.play()
 
 def Wrong():
-    playsound('SFX/Wrong.mp3')
-    # pygame.mixer.init()
-    # pygame.mixer.music.load('SFX/Wrong.mp3')
-    # pygame.mixer.music.play()
+    #playsound('SFX/Wrong.mp3')
+    pygame.mixer.init()
+    pygame.mixer.music.load('SFX/Wrong.mp3')
+    pygame.mixer.music.play()
 
 def Click():
-   playsound('SFX/Click.mp3')
-    # pygame.mixer.init()
-    # pygame.mixer.music.load('SFX/Click.mp3')
-    # pygame.mixer.music.play()
+   #playsound('SFX/Click.mp3')
+    pygame.mixer.init()
+    pygame.mixer.music.load('SFX/Click.mp3')
+    pygame.mixer.music.play()
 
 def Check0():
     global ans
