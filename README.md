@@ -1,5 +1,5 @@
 # Movie Guessing Quiz
-## Summary
+# Summary
 The goal of the game is to guess the movie through the usage of 2-4 emojis that will be displayed on the polarizer motherframe! 
 Select the correct answer from 4 choices and get the highest score possible which is 22! 
 
@@ -45,7 +45,7 @@ _Code Flowchart_
 **Version:** Raspbian GNU Linux 10 Buster
 
 ![Raspberry Pi 4](/Images/Pi4.jpg)
-### _Raspberry Pi Model_
+### _Photo of Raspberry Pi Model_
 
 ## Features
 The game features:
@@ -105,7 +105,12 @@ sudo raspi-config
 ```
 Select `3 Interface Options` <br>
 Select `P3 VNC` <br>
-Select  **Enable VNC**
+Select  **Enable VNC**<br>
+
+Open VNC Viewer on your Windows PC<br>
+Type in the IP of your Raspberry Pi after logging in through Putty CMD<br>
+Type in your Username and Password<br>
+Now, you will see the screen of the Raspberry Pi on your PC.<br>
 
 ![GUI](Images/VNCSetup.png) <br>
 ### _VNC Setup_
