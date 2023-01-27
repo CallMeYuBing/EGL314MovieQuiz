@@ -6,7 +6,7 @@ The conditions to win the game is to get a minimum of 8 points before the 5 minu
 
 Otherwise, having less than 8 points when the 5 minute timer ends or getting 6 questions wrong will be a game over.
 
-![Main GUI](Documentation/GUI.png "Main GUI")
+![Main GUI](https://github.com/CallMeYuBing/EGL314MovieQuiz/blob/main/Images/GUI.png)
 Photo of Main GUI
 
 
