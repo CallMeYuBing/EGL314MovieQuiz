@@ -186,9 +186,6 @@ import paho.mqtt.client as mqtt
 from student_pub import pubpic 
 import pygame
 from pygame import *
-
-main = Tk()
-main.title("Guess the Movie Emoji Quiz")
 ```
 
 **tkinter** is used for building the GUI which includes the frames, buttons, labels, message box and titles. 
