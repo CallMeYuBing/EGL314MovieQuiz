@@ -6,38 +6,25 @@ The conditions to win the game is to get a minimum of 8 points before the 5 minu
 
 Otherwise, having less than 8 points when the 5 minute timer ends or getting 6 questions wrong will be a game over.
 
-![Main GUI](https://github.com/CallMeYuBing/EGL314MovieQuiz/blob/main/Images/GUI.png)
+![Main GUI](/Images/GUI.png)
 Photo of Main GUI
 
 
 ```mermaid
 graph TD;
-main.py-->rules;
+main.py-->rules
 rules-->main.py
-main.py-->start;
-start-->levels;
-start-->options;
-levels-->level1;
-levels-->level2;
-levels-->level3;
-levels-->level4;
-levels-->level5;
-levels-->level6;
-levels-->level7;
-levels-->level8;
-levels-->level9;
-levels-->level10;
-levels-->level11;
-levels-->level12;
-options-->optionA;
-options-->optionB;
-options-->optionC;
-options-->optionD;
-levels-->options;
+main.py-->start
+start-->levels
+levels-->level1to12
+level1to12-->optionsAtoD
+optionsAtoD-->Correct+1Score
+optionsAtoD-->Wrong-1Score
 ```
 Code Flowchart
 ### Software Used
-Name: Visual Studio Code
+Model of hardware: Raspberry Pi 4 Model B
+Version: Raspbian GNU Linux 10 Buster
 
 Version: 1.74 
 
