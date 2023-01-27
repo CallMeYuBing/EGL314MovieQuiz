@@ -489,17 +489,18 @@ On the other hand, if the condition is false than the player has 1 point deduct 
 
 The sound effect for a correct answer is this function: 
 
+```
 def Correct():
     pygame.mixer.init()
     pygame.mixer.music.load('SFX/Correct.mp3')
     pygame.mixer.music.play()
-
+```
 The sound effect for a wrong answer is this function:
-
+```
 def Wrong():
     pygame.mixer.init()
     pygame.mixer.music.load('SFX/Wrong.mp3')
     pygame.mixer.music.play() 
-
+```
 These functions are located inside all 4 of the Check() functions.
 
