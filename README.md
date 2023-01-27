@@ -54,6 +54,60 @@ The game features:
 - 5 minute timer
 - 4 choices to pick from for each question
 
+
+## Software Setup & Installation 
+
+### PuTTy
+After installing PuTTy, Change your desired **hostname** and **Connection Type** to "**SSH**" <br>
+Input a name under **Saved Sessions** and click on save, the file will appear at the left hand side of the Settings. <br> 
+Click the file once and load it. <br>
+To finish it off, click **Open**.
+
+![GUI](Images/PuttySetup.png) <br>
+*Photo of PuTTy Setup*
+
+
+Enter your username and password. The default login for User is "pi" and the Password is "raspberry".
+
+![GUI](Images/VNCSetup.png) <br>
+*Photo of PuTTy CMD*
+
+To change your password, use the following command
+``` 
+sudo passwd
+```
+
+## 1. Updating of Raspberry Pi
+
+```
+sudo apt update
+sudo apt upgrade
+```
+
+## 2. Configuring of Raspberry Pi
+SSH is a network communication protocol that enables two computers to communicate and share data.
+To **enable** SSH, type the following
+```
+sudo raspi-config
+```
+
+Select `3 Interface Options` <br>
+Select `P2 SSH` <br>
+**Enable SSH**
+
+### Enabling Virtual Network Computing (VNC)
+**VNC** is a cross-platform screen sharing system that can be used to remotely control another computer. 
+<br>
+
+To **enable** VNC, type the following
+```
+sudo raspi-config
+```
+Select `3 Interface Options` <br>
+Select `P3 VNC` <br>
+Select  **Enable VNC**
+
+
 ## **Getting started**
 
 To run this program, you need to install the following libraries on your Raspberry Pi
@@ -74,7 +128,7 @@ sudo apt install -y mosquitto-clients
 sudo pip3 install pah-mqtt
 ```
 
-if pip3 is not installed already please do the follow
+if pip3 is not installed already please do the following
 
 ```
 sudo apt install python3-pip
@@ -86,6 +140,23 @@ sudo apt install python3-pip
 sudo apt install pygame
 ```
 
+Afterwards, please type this in your terminal to clone the repository into your raspberry pi
+
+```
+git clone https://github.com/CallMeYuBing/EGL314MovieQuiz
+```
+
+Once the command is completed, use the following command to change the directory to the cloned repository
+
+```
+cd /home/pi/EGL314MovieQuiz
+```
+
+than open the game using this command
+
+```
+python3 main
+```
 
 
 ## **How does the code work?**
