@@ -19,16 +19,17 @@ main.py-->rules
 rules-->main.py
 reset-->main.py
 main.py-->start
-start-->levels
-levels-->level1to12
+resetbutton-->main.py
+start-->level1to12
+level1to12-->resetbutton
 level1to12-->optionsAtoD
 optionsAtoD-->Correct+1Score
 optionsAtoD-->Wrong-1Score
 Correct+1Score-->Score
 Wrong-1Score-->Score
-Score-->ScoreAbove8
+Score-->ScoreAbove8WhenTimeoutOr12
 Score-->ScoreBelow6OrTimeout
-ScoreAbove8-->Win
+ScoreAbove8WhenTimeoutOr12-->Win
 ScoreBelow6OrTimeout-->Lose
 Win-->reset
 Lose-->reset
@@ -36,8 +37,9 @@ Lose-->reset
 _Code Flowchart_
 
 ## Hardware Used
-Model of hardware: Raspberry Pi 4 Model B
-Version: Raspbian GNU Linux 10 Buster
+**Model of hardware:** Raspberry Pi 4 Model B
+
+**Version:** Raspbian GNU Linux 10 Buster
 
 ## Features
 The game features:
@@ -48,18 +50,18 @@ The game features:
 
 ## Installation
 
-To run this program, you need to install following libraries
+To run this program, you need to install following libraries on your Raspberry Pi
 - MQTT Client
 - pygame 
 
-Open up terminal
+Open up your terminal
 
 Installation of MQTT Client
 ```
 sudo apt install paho-mqtt
 ```
 
-Installation of playsound
+Installation of pygame
 ```
 sudo apt install pygame
 ```
