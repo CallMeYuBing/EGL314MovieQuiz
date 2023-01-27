@@ -64,13 +64,13 @@ Click the file once and load it. <br>
 To finish it off, click **Open**.
 
 ![GUI](Images/PuttySetup.png) <br>
-*Photo of PuTTy Setup*
+### _Photo of PuTTy Setup_
 
 
 Enter your username and password. The default login for User is "pi" and the Password is "raspberry".
 
 ![GUI](Images/PuttyCMD.png) <br>
-*Photo of PuTTy CMD*
+### _Photo of PuTTy CMD_
 
 To change your password, use the following command
 ``` 
@@ -106,6 +106,9 @@ sudo raspi-config
 Select `3 Interface Options` <br>
 Select `P3 VNC` <br>
 Select  **Enable VNC**
+
+![GUI](Images/VNCSetup.png) <br>
+### _VNC Setup_
 
 
 ## **Getting started**
