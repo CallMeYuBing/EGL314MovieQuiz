@@ -288,6 +288,7 @@ twelve.grid(row=3, column=2)
 frame3 = Frame(main)
 frame3.grid(row=1, column=1)
 frame3.config(bg='#8FC0A9')
+frame3.option_add('*Font','Arial 50')
 
 points = 0
 ans = 0
@@ -419,12 +420,12 @@ def GameCondition():
     global points
     global roundover
 
-    if time == 0 and points < 8 and roundover == False: 
+    if time == 0 and points < 3 and roundover == False: 
         messagebox.showinfo("Lose", "You lose! Timeout! Your score is " + str(points))
         roundover == True
         ResetBtn_pressed()
     
-    elif points >= 8 and time == 0 and roundover == False: 
+    elif points >= 3 and time == 0 and roundover == False: 
         messagebox.showinfo("Win","You win! Good luck on getting all 12 correct next time! Your score is " + str(points)) 
         ResetBtn_pressed()
     
@@ -434,7 +435,7 @@ def GameCondition():
         roundover == True
         ResetBtn_pressed()
     
-    elif points <= -5 and roundover == False:
+    elif points <= -2 and roundover == False:
         messagebox.showinfo("Lose","You lose! You got too many wrong answers! Your score is " + str(points))
         roundover == True
         ResetBtn_pressed()
